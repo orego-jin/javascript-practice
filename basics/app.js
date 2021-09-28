@@ -15,6 +15,7 @@
 //   console.log("You can drink.")
 // }
 
+
 const title = document.querySelector('div.title h1');
 const title2 = document.querySelector('div.title h2');
 
