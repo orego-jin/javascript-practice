@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge-03</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Random Number Game</h1>
+  <form class="number-game-form">
+    <div class="number-generator">
+      <h2>
+        Generate a number between 0 and 
+        <input 
+          type="number"
+          min="0"
+          required
+        />
+      </h2>
+    </div>
+    <div class="number-player">
+      Guess the number:
+      <input 
+        type="number"
+        min="0"
+        required
+      />
+      <button>Play!</button>
+    </div>
+  </form>
+
+  <div class="play-result">
+    <p></p>
+    <strong></strong>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
