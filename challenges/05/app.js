@@ -25,11 +25,12 @@ const colors = [
 
 function bgColorHandler(event){
   const randomNumber1 = Math.floor(Math.random()*colors.length);
-  const randomNumber2 = Math.floor(Math.random()*colors.length);
-
+  const filteredColors = colors.filter(item => item!= colors[randomNumber1]);
+  const randomNumber2 = Math.floor(Math.random()*filteredColors.length);
+  console.log(colors[randomNumber1], colors[randomNumber2])
   // body.style.backgroundColor = colors[randomNumber1];
   // body.style.background = "linear-gradient(to right," + colors[randomNumber1] + "," + colors[randomNumber2] + ")";
-  body.style.background = `linear-gradient(to right, ${colors[randomNumber1]}, ${colors[randomNumber2]})`;
+  body.style.background = `linear-gradient(to right, ${colors[randomNumber1]}, ${filteredColors[randomNumber2]})`;
 }
 
 // bgColorHandler();
